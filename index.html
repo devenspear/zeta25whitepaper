@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Operating System Shift: How AI Agents Are Rewriting the Rules of Marketing</title>
+
+    <!-- Meta tags for social sharing -->
+    <meta property="og:title" content="The Operating System Shift: How AI Agents Are Rewriting Marketing">
+    <meta property="og:description" content="A comprehensive white paper from Zeta Live 2025 on how AI agents are transforming marketing operations">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Operating System Shift: AI Agents in Marketing">
+    <meta name="twitter:description" content="79% of enterprises have adopted AI agents. Are you ready for the shift?">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'slide-in-right': 'slideInRight 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(-20px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #6B21A8 0%, #3B0764 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-line {
+            position: relative;
+        }
+
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, #6B21A8 0%, #3B0764 100%);
+            transform: translateX(-50%);
+        }
+
+        @media (max-width: 768px) {
+            .timeline-line::before {
+                left: 20px;
+            }
+        }
+
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gradient-to-br from-slate-50 via-white to-slate-50">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+        <!-- Simple CSS Light Rays (Much Better Performance) -->
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-50 via-purple-100 to-purple-50">
+            <!-- Lightweight CSS-only animated rays -->
+            <div class="absolute inset-0 opacity-30">
+                <div class="absolute bottom-0 left-1/4 w-0.5 h-full bg-gradient-to-t from-purple-300 via-purple-200 to-transparent transform -rotate-12 origin-bottom animate-pulse-slow"></div>
+                <div class="absolute bottom-0 left-1/3 w-0.5 h-full bg-gradient-to-t from-purple-400 via-purple-200 to-transparent transform -rotate-6 origin-bottom animate-pulse-slow" style="animation-delay: 0.5s;"></div>
+                <div class="absolute bottom-0 left-1/2 w-0.5 h-full bg-gradient-to-t from-purple-300 via-purple-200 to-transparent transform rotate-0 origin-bottom animate-pulse-slow" style="animation-delay: 1s;"></div>
+                <div class="absolute bottom-0 left-2/3 w-0.5 h-full bg-gradient-to-t from-purple-400 via-purple-200 to-transparent transform rotate-6 origin-bottom animate-pulse-slow" style="animation-delay: 1.5s;"></div>
+                <div class="absolute bottom-0 left-3/4 w-0.5 h-full bg-gradient-to-t from-purple-300 via-purple-200 to-transparent transform rotate-12 origin-bottom animate-pulse-slow" style="animation-delay: 2s;"></div>
+            </div>
+        </div>
+
+        <div class="relative max-w-6xl mx-auto px-6 py-12 text-center">
+            <div class="mb-6 animate-fade-in">
+                <span class="inline-block px-4 py-2 bg-gradient-to-r from-purple-700 to-purple-900 text-white text-sm font-semibold rounded-full shadow-lg">
+                    Zeta Live 2025 White Paper
+                </span>
+            </div>
+
+            <h1 class="font-display text-5xl md:text-7xl font-black text-slate-900 mb-6 leading-tight animate-fade-in-up" style="animation-delay: 0.2s;">
+                The Operating System<br>
+                <span class="gradient-text">Shift</span>
+            </h1>
+
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-700 mb-8 animate-fade-in-up" style="animation-delay: 0.4s;">
+                How AI Agents Are Rewriting<br class="hidden md:block"> the Rules of Marketing
+            </h2>
+
+            <!-- Key Stats Preview -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 max-w-4xl mx-auto animate-fade-in-up" style="animation-delay: 0.6s;">
+                <div class="glass-morphism p-6 rounded-2xl hover-lift">
+                    <div class="text-4xl font-black gradient-text mb-2 stat-number">88%</div>
+                    <div class="text-sm text-slate-600 font-medium">of marketers use AI tools daily</div>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover-lift">
+                    <div class="text-4xl font-black gradient-text mb-2 stat-number">$4.4T</div>
+                    <div class="text-sm text-slate-600 font-medium">potential annual GDP impact by 2030</div>
+                </div>
+                <div class="glass-morphism p-6 rounded-2xl hover-lift">
+                    <div class="text-4xl font-black gradient-text mb-2 stat-number">79%</div>
+                    <div class="text-sm text-slate-600 font-medium">of enterprises already use AI agents</div>
+                </div>
+            </div>
+
+            <div class="mt-12 animate-fade-in-up" style="animation-delay: 0.8s;">
+                <a href="#content" class="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors">
+                    <span>Scroll to explore</span>
+                    <i class="fas fa-arrow-down animate-bounce"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div id="content" class="max-w-7xl mx-auto px-6 lg:px-12 xl:px-16 py-16">
+
+        <!-- Inflection Point Section -->
+        <section class="mb-20 animate-on-scroll">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-slate-900 mb-8">
+                The Inflection Point
+            </h2>
+
+            <div class="bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-700 p-8 rounded-r-2xl mb-8 hover-lift">
+                <p class="text-xl md:text-2xl text-slate-700 leading-relaxed">
+                    Something fundamental changed at Zeta Live 2025. The conversation wasn't about whether AI belongs in marketing—that debate is over. Nearly <span class="font-bold text-purple-800">88% of marketers</span> now use AI tools daily, up from just 37% a year ago. The real question has become far more existential: are we ready for marketing where AI doesn't just assist, but decides and acts?
+                </p>
+            </div>
+
+            <div class="prose prose-lg max-w-none mb-8">
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    The short answer delivered across two days of keynotes, demos, and strategy sessions: AI agents are no longer bolt-on features. They're becoming the operating system itself.
+                </p>
+
+                <p class="text-lg text-slate-700 leading-relaxed">
+                    This isn't hyperbole. When Zeta's CEO described their new Athena platform as "the operating system of our customers' lives and businesses," he was articulating a shift that extends far beyond one company's product roadmap. Salesforce announced Agentforce 360 days earlier. AdTech players launched the Ad Context Protocol for agent-to-agent media buying. Gartner projects that 40% of enterprise applications will ship with task-specific agents by 2026.
+                </p>
+            </div>
+
+            <!-- Pull Quote -->
+            <div class="relative my-12 p-8 md:p-12 bg-gradient-to-br from-purple-800 to-purple-950 rounded-3xl shadow-2xl hover-lift">
+                <div class="absolute top-4 left-4 text-6xl text-white opacity-20">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="font-display text-2xl md:text-3xl font-bold text-white leading-relaxed relative z-10 italic">
+                    "The center of gravity in marketing technology is moving from dashboards that describe what happened to agents that decide what happens next—and then make it happen."
+                </p>
+            </div>
+
+            <p class="text-lg text-slate-700 leading-relaxed">
+                The pattern is clear. The center of gravity in marketing technology is moving from dashboards that describe what happened to agents that decide what happens next—and then make it happen, with your approval. This paper unpacks what that means, why it matters now, and how marketing leaders can navigate the transition without losing control, trust, or their jobs.
+            </p>
+        </section>
+
+        <div class="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent my-16"></div>
+
+        <!-- Five Forces Section -->
+        <section class="mb-20 animate-on-scroll">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-slate-900 mb-12">
+                Five Forces Reshaping Marketing Operations
+            </h2>
+
+            <!-- Force 1: AI as Interface -->
+            <div class="mb-16 animate-on-scroll">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-700 to-purple-900 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        1
+                    </div>
+                    <h3 class="font-display text-3xl font-bold text-slate-900 mt-1">
+                        AI as Interface, Not Instrument
+                    </h3>
+                </div>
+
+                <!-- AI Agent Interface Illustration -->
+                <div class="bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 rounded-2xl p-8 mb-8 min-h-[300px] hover-lift overflow-hidden relative">
+                    <!-- SVG Illustration: Conversational AI Interface -->
+                    <svg class="w-full h-full" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Subtle gradient background -->
+                        <defs>
+                            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgba(147,51,234,0.1);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgba(126,34,206,0.2);stop-opacity:1" />
+                            </linearGradient>
+
+                            <!-- Shadow filters for depth -->
+                            <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                                <feOffset dx="0" dy="2" result="offsetblur"/>
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.3"/>
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+
+                        <rect width="800" height="300" fill="url(#bgGrad)"/>
+
+                        <!-- Elegant User Avatar (left) -->
+                        <g transform="translate(100, 150)" filter="url(#softShadow)">
+                            <!-- Modern avatar circle -->
+                            <circle r="35" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+                            <circle r="28" fill="rgba(255,255,255,0.95)"/>
+                            <!-- Minimalist user icon -->
+                            <circle cx="0" cy="-5" r="8" fill="#6B21A8"/>
+                            <path d="M -12 12 Q 0 5 12 12" stroke="#6B21A8" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        </g>
+
+                        <!-- Professional Message Bubble 1: "You ask" -->
+                        <g transform="translate(200, 100)" filter="url(#softShadow)">
+                            <rect x="0" y="0" width="180" height="70" rx="12" fill="rgba(255,255,255,0.98)"/>
+                            <!-- Subtle left border accent -->
+                            <rect x="0" y="0" width="4" height="70" rx="12" fill="#A78BFA"/>
+                            <text x="92" y="28" font-size="13" fill="#4C1D95" text-anchor="middle" font-weight="700" letter-spacing="0.5">You ask</text>
+                            <text x="92" y="48" font-size="11" fill="#6B21A8" text-anchor="middle" font-weight="500">"Show campaign</text>
+                            <text x="92" y="62" font-size="11" fill="#6B21A8" text-anchor="middle" font-weight="500">performance"</text>
+                        </g>
+
+                        <!-- Elegant connecting arrow 1 -->
+                        <path d="M 185 135 Q 210 135 230 135" stroke="rgba(167,139,250,0.7)" stroke-width="2.5" fill="none" marker-end="url(#arrowElegant)" stroke-linecap="round"/>
+
+                        <!-- Sophisticated AI Agent (center) -->
+                        <g transform="translate(400, 150)">
+                            <!-- Outer glow ring -->
+                            <circle r="55" fill="none" stroke="rgba(167,139,250,0.3)" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+                            <!-- Main AI orb with gradient -->
+                            <circle r="42" fill="url(#aiGradient)" stroke="rgba(196,181,253,0.9)" stroke-width="2.5"/>
+                            <!-- Inner core -->
+                            <circle r="32" fill="rgba(126,34,206,0.4)" stroke="rgba(216,180,254,0.6)" stroke-width="1.5"/>
+
+                            <!-- Modern AI neural network symbol -->
+                            <g opacity="0.95">
+                                <!-- Central node -->
+                                <circle cx="0" cy="0" r="6" fill="rgba(255,255,255,0.95)"/>
+                                <!-- Connection nodes -->
+                                <circle cx="-15" cy="-12" r="4" fill="rgba(255,255,255,0.85)"/>
+                                <circle cx="15" cy="-12" r="4" fill="rgba(255,255,255,0.85)"/>
+                                <circle cx="-15" cy="12" r="4" fill="rgba(255,255,255,0.85)"/>
+                                <circle cx="15" cy="12" r="4" fill="rgba(255,255,255,0.85)"/>
+                                <!-- Connection lines -->
+                                <line x1="0" y1="0" x2="-15" y2="-12" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+                                <line x1="0" y1="0" x2="15" y2="-12" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+                                <line x1="0" y1="0" x2="-15" y2="12" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+                                <line x1="0" y1="0" x2="15" y2="12" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+                            </g>
+
+                            <text y="70" font-size="11" fill="rgba(255,255,255,0.9)" text-anchor="middle" font-weight="600" letter-spacing="1">AI AGENT</text>
+                        </g>
+
+                        <!-- AI gradient definition -->
+                        <defs>
+                            <radialGradient id="aiGradient">
+                                <stop offset="0%" style="stop-color:rgba(147,51,234,0.6);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:rgba(88,28,135,0.8);stop-opacity:1" />
+                            </radialGradient>
+                        </defs>
+
+                        <!-- Elegant connecting arrow 2 -->
+                        <path d="M 442 150 Q 470 150 490 135" stroke="rgba(167,139,250,0.7)" stroke-width="2.5" fill="none" marker-end="url(#arrowElegant)" stroke-linecap="round"/>
+
+                        <!-- Professional Message Bubble 2: "I answer" -->
+                        <g transform="translate(490, 100)" filter="url(#softShadow)">
+                            <rect x="0" y="0" width="200" height="70" rx="12" fill="rgba(167,139,250,0.98)"/>
+                            <text x="100" y="28" font-size="13" fill="#FFFFFF" text-anchor="middle" font-weight="700" letter-spacing="0.5">I answer</text>
+                            <text x="100" y="48" font-size="11" fill="rgba(255,255,255,0.95)" text-anchor="middle" font-weight="500">"Engagement up 23%,</text>
+                            <text x="100" y="62" font-size="11" fill="rgba(255,255,255,0.95)" text-anchor="middle" font-weight="500">ROI +15%"</text>
+                        </g>
+
+                        <!-- Elegant connecting arrow 3 -->
+                        <path d="M 690 135 Q 710 135 730 150" stroke="rgba(167,139,250,0.7)" stroke-width="2.5" fill="none" marker-end="url(#arrowElegant)" stroke-linecap="round"/>
+
+                        <!-- Refined Action Button (right) -->
+                        <g transform="translate(735, 150)" filter="url(#softShadow)">
+                            <!-- Button background -->
+                            <rect x="-32" y="-32" width="64" height="64" rx="12" fill="rgba(255,255,255,0.98)"/>
+                            <!-- Play icon with gradient -->
+                            <path d="M -8 -12 L -8 12 L 12 0 Z" fill="#6B21A8"/>
+                            <text y="48" font-size="10" fill="rgba(255,255,255,0.95)" text-anchor="middle" font-weight="600" letter-spacing="0.5">You approve</text>
+                        </g>
+
+                        <!-- Elegant arrow marker -->
+                        <defs>
+                            <marker id="arrowElegant" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <path d="M 0 0 L 10 3 L 0 6 L 2 3 Z" fill="rgba(167,139,250,0.7)" />
+                            </marker>
+                        </defs>
+                    </svg>
+                </div>
+
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    The demo that opened Zeta Live felt like science fiction rendered mundane. Athena, their conversational super-agent, didn't just answer questions about campaign performance. It detected intent spikes in audience segments—refinancing interest up 23%, auto consideration climbing—and volunteered to update creative collateral on command. The interaction pattern was simple: "You ask, I answer. You approve, I act."
+                </p>
+
+                <div class="bg-gradient-to-br from-purple-700 to-purple-950 text-white p-8 rounded-2xl shadow-xl hover-lift">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 text-3xl">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3">The Adoption Wave</h4>
+                            <p class="leading-relaxed opacity-95">
+                                PwC's 2025 survey of 1,000 business leaders found that <strong>79% of organizations</strong> have already adopted AI agents to some extent, with <strong>88%</strong> planning to increase AI budgets this year because of agentic capabilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Force 2: Data Lakes to Answer Engines -->
+            <div class="mb-16 animate-on-scroll">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-600 to-purple-900 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        2
+                    </div>
+                    <h3 class="font-display text-3xl font-bold text-slate-900 mt-1">
+                        From Data Lakes to Answer Engines
+                    </h3>
+                </div>
+
+                <!-- Data Lakes to Answer Engines Illustration -->
+                <div class="bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 rounded-2xl p-8 mb-8 min-h-[300px] hover-lift overflow-hidden relative">
+                    <svg class="w-full h-full" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Left side: Data Lake (messy) -->
+                        <g>
+                            <text x="150" y="40" font-size="16" fill="rgba(255,255,255,0.9)" text-anchor="middle" font-weight="600">Data Lake</text>
+                            <!-- Disorganized data symbols -->
+                            <rect x="80" y="80" width="40" height="30" rx="3" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                            <circle cx="160" cy="100" r="20" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                            <polygon points="115,140 95,170 135,170" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                            <rect x="145" y="140" width="50" height="35" rx="3" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                            <circle cx="110" cy="200" r="15" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                            <rect x="140" y="195" width="45" height="25" rx="3" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                            <!-- Question marks showing confusion -->
+                            <text x="100" y="250" font-size="24" fill="rgba(255,255,255,0.4)" text-anchor="middle">?</text>
+                            <text x="160" y="250" font-size="24" fill="rgba(255,255,255,0.4)" text-anchor="middle">?</text>
+                        </g>
+
+                        <!-- Arrow showing transformation -->
+                        <g>
+                            <path d="M 240 150 L 320 150" stroke="rgba(167,139,250,0.8)" stroke-width="3" marker-end="url(#arrow2)"/>
+                            <text x="280" y="140" font-size="14" fill="rgba(167,139,250,0.9)" text-anchor="middle" font-weight="600">Transform</text>
+                        </g>
+
+                        <!-- Center: AI Processing -->
+                        <g transform="translate(400, 150)">
+                            <circle r="50" fill="rgba(126,34,206,0.3)" stroke="rgba(167,139,250,0.8)" stroke-width="2"/>
+                            <!-- Gear symbol for processing -->
+                            <circle r="15" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.8)" stroke-width="2"/>
+                            <path d="M 0 -20 L 0 -30 M 20 0 L 30 0 M 0 20 L 0 30 M -20 0 L -30 0"
+                                  stroke="rgba(255,255,255,0.8)" stroke-width="3" stroke-linecap="round"/>
+                            <text y="75" font-size="12" fill="rgba(255,255,255,0.9)" text-anchor="middle" font-weight="600">AI Layer</text>
+                        </g>
+
+                        <!-- Arrow to answers -->
+                        <g>
+                            <path d="M 480 150 L 560 150" stroke="rgba(167,139,250,0.8)" stroke-width="3" marker-end="url(#arrow2)"/>
+                            <text x="520" y="140" font-size="14" fill="rgba(167,139,250,0.9)" text-anchor="middle" font-weight="600">Generate</text>
+                        </g>
+
+                        <!-- Right side: Answer Engine (organized) -->
+                        <g>
+                            <text x="660" y="40" font-size="16" fill="rgba(255,255,255,0.9)" text-anchor="middle" font-weight="600">Answers</text>
+                            <!-- Organized answer cards -->
+                            <rect x="590" y="70" width="140" height="35" rx="5" fill="rgba(167,139,250,0.9)" stroke="rgba(255,255,255,0.6)" stroke-width="1"/>
+                            <text x="660" y="92" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">1. Optimize Channel X</text>
+
+                            <rect x="590" y="115" width="140" height="35" rx="5" fill="rgba(147,51,234,0.9)" stroke="rgba(255,255,255,0.6)" stroke-width="1"/>
+                            <text x="660" y="137" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">2. Increase Budget Y</text>
+
+                            <rect x="590" y="160" width="140" height="35" rx="5" fill="rgba(126,34,206,0.9)" stroke="rgba(255,255,255,0.6)" stroke-width="1"/>
+                            <text x="660" y="182" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">3. Test Creative Z</text>
+
+                            <!-- Checkmark showing clarity -->
+                            <circle cx="660" cy="230" r="20" fill="rgba(34,197,94,0.8)" stroke="rgba(255,255,255,0.9)" stroke-width="2"/>
+                            <path d="M 652 230 L 658 236 L 670 224" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        </g>
+
+                        <defs>
+                            <marker id="arrow2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                <polygon points="0 0, 10 3, 0 6" fill="rgba(167,139,250,0.8)" />
+                            </marker>
+                        </defs>
+                    </svg>
+                </div>
+
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    Most marketing organizations are drowning in data but starving for decisions. Zeta's response: stop asking marketers to be data scientists. Instead, build an "Answers" layer that converts signals into prioritized recommendations before anyone has to query anything.
+                </p>
+
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    Their Executive Intelligence Hub consolidates identity graph data, commerce signals, and competitive intelligence into daily recommendations across acquire-grow-retain strategies. The most provocative element: a collaboration with Fiserv that pipes 300 million monthly card transactions across 90 million people into their identity graph. The question shifts from "what did our target audience do?" to "what did they spend after our marketing touched them?"
+                </p>
+
+                <div class="bg-amber-50 border-l-4 border-amber-500 p-8 rounded-r-2xl hover-lift">
+                    <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fas fa-lightbulb text-amber-500"></i>
+                        The Measurement Revolution
+                    </h4>
+                    <p class="text-lg text-slate-700 leading-relaxed">
+                        Payment rail data, handled with proper consent and privacy infrastructure, becomes ground truth for outcomes. When you can bind media exposure to authenticated transaction data, attribution stops being a modeling exercise and starts being measurement.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Force 3: Measurement -->
+            <div class="mb-16 animate-on-scroll">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-600 to-purple-900 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        3
+                    </div>
+                    <h3 class="font-display text-3xl font-bold text-slate-900 mt-1">
+                        Measurement Broken, Measurement Reborn
+                    </h3>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white border-2 border-slate-200 p-8 rounded-2xl hover-lift">
+                        <div class="text-5xl font-black gradient-text mb-3 stat-number">91%</div>
+                        <p class="text-slate-600 text-sm leading-relaxed">of CMOs identify accurate cross-channel attribution as "extremely important"</p>
+                    </div>
+                    <div class="bg-white border-2 border-slate-200 p-8 rounded-2xl hover-lift">
+                        <div class="text-5xl font-black text-purple-700 mb-3 stat-number">13%</div>
+                        <p class="text-slate-600 text-sm leading-relaxed">report high confidence in their current attribution capabilities</p>
+                    </div>
+                </div>
+
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    There's a reason every major industry consortium—ANA's Aquila, WFA's Halo, IAB's PAIR protocol—is racing to establish new measurement standards. The old frameworks don't work anymore. Consumers touch an average of 9.5 points before converting. Each platform claims credit. Third-party cookies are effectively dead. Privacy regulations tighten quarterly.
+                </p>
+
+                <div class="bg-gradient-to-br from-purple-700 to-purple-950 text-white p-8 rounded-2xl shadow-xl hover-lift">
+                    <p class="text-lg leading-relaxed opacity-95">
+                        <strong>The 78-point gap</strong> between importance (91%) and confidence (13%) is where agentic measurement systems are landing. This isn't just a technology gap—it's a trust crisis waiting to be solved.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Force 4: Bloomberg Terminal -->
+            <div class="mb-16 animate-on-scroll">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-600 to-purple-900 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        4
+                    </div>
+                    <h3 class="font-display text-3xl font-bold text-slate-900 mt-1">
+                        The Bloomberg Terminal for Growth
+                    </h3>
+                </div>
+
+                <!-- Agentic Workspace Ecosystem Illustration -->
+                <div class="bg-gradient-to-br from-indigo-900 via-purple-900 to-purple-800 rounded-2xl p-8 mb-8 min-h-[300px] hover-lift overflow-hidden relative">
+                    <svg class="w-full h-full" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Central Orchestration Hub -->
+                        <g transform="translate(400, 150)">
+                            <circle r="60" fill="rgba(147,51,234,0.3)" stroke="rgba(167,139,250,0.9)" stroke-width="3"/>
+                            <circle r="45" fill="rgba(126,34,206,0.4)" stroke="rgba(196,181,253,0.7)" stroke-width="2"/>
+                            <text y="5" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="700">Athena</text>
+                            <text y="20" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Orchestration</text>
+                        </g>
+
+                        <!-- Agent 1: Analytics (Top Left) -->
+                        <g transform="translate(200, 80)">
+                            <rect x="-50" y="-40" width="100" height="80" rx="8" fill="rgba(99,102,241,0.9)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                            <!-- Chart icon -->
+                            <path d="M -30 10 L -30 -10 L -20 -5 L -20 10 M -10 10 L -10 -15 L 0 -18 L 0 10 M 10 10 L 10 0 L 20 -2 L 20 10"
+                                  stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <text y="30" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">Analytics</text>
+                            <!-- Connection line to center -->
+                            <line x1="50" y1="40" x2="160" y2="100" stroke="rgba(167,139,250,0.6)" stroke-width="2" stroke-dasharray="4,4"/>
+                        </g>
+
+                        <!-- Agent 2: Creative (Top Right) -->
+                        <g transform="translate(600, 80)">
+                            <rect x="-50" y="-40" width="100" height="80" rx="8" fill="rgba(168,85,247,0.9)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                            <!-- Palette icon -->
+                            <circle cx="-15" cy="-5" r="12" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                            <circle cx="-20" cy="-10" r="3" fill="#FFFFFF"/>
+                            <circle cx="-10" cy="-10" r="3" fill="#FFFFFF"/>
+                            <circle cx="-15" cy="0" r="3" fill="#FFFFFF"/>
+                            <path d="M 5 -15 L 15 -15 L 15 5 L 5 5 Z" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                            <text y="30" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">Creative</text>
+                            <!-- Connection line to center -->
+                            <line x1="-50" y1="40" x2="-160" y2="100" stroke="rgba(167,139,250,0.6)" stroke-width="2" stroke-dasharray="4,4"/>
+                        </g>
+
+                        <!-- Agent 3: Audience (Bottom Left) -->
+                        <g transform="translate(200, 220)">
+                            <rect x="-50" y="-40" width="100" height="80" rx="8" fill="rgba(139,92,246,0.9)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                            <!-- Users icon -->
+                            <circle cx="-15" cy="-10" r="8" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                            <circle cx="15" cy="-10" r="8" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                            <path d="M -25 10 Q -15 0 -5 10 M 5 10 Q 15 0 25 10" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                            <text y="30" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">Audience</text>
+                            <!-- Connection line to center -->
+                            <line x1="50" y1="-40" x2="160" y2="-100" stroke="rgba(167,139,250,0.6)" stroke-width="2" stroke-dasharray="4,4"/>
+                        </g>
+
+                        <!-- Agent 4: Governance (Bottom Right) -->
+                        <g transform="translate(600, 220)">
+                            <rect x="-50" y="-40" width="100" height="80" rx="8" fill="rgba(124,58,237,0.9)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+                            <!-- Shield icon -->
+                            <path d="M 0 -15 L -15 -10 L -15 0 Q -15 10 0 15 Q 15 10 15 0 L 15 -10 Z"
+                                  fill="none" stroke="#FFFFFF" stroke-width="2"/>
+                            <path d="M -5 0 L 0 5 L 10 -8" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <text y="30" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600">Governance</text>
+                            <!-- Connection line to center -->
+                            <line x1="-50" y1="-40" x2="-160" y2="-100" stroke="rgba(167,139,250,0.6)" stroke-width="2" stroke-dasharray="4,4"/>
+                        </g>
+
+                        <!-- Title -->
+                        <text x="400" y="30" font-size="16" fill="rgba(255,255,255,0.9)" text-anchor="middle" font-weight="600">Specialized Agents → Unified Orchestration</text>
+                    </svg>
+                </div>
+
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                    Zeta introduced a concept that crystallizes where marketing operations are heading: <strong>Agentic Workspaces</strong>. Think of it as a Bloomberg terminal for marketing—not one monolithic application, but an ecosystem of specialized apps that coordinate through a central orchestration layer.
+                </p>
+
+                <div class="relative my-8 p-8 bg-gradient-to-r from-purple-50 to-purple-100 border-l-4 border-purple-700 rounded-r-2xl hover-lift">
+                    <p class="font-display text-2xl font-semibold text-purple-900 italic leading-relaxed">
+                        "Your team won't be switching between 30 browser tabs. They'll be describing goals to an agent that coordinates execution across platforms on their behalf."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Force 5: Two-Surface Economy -->
+            <div class="mb-16 animate-on-scroll">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-600 to-purple-900 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        5
+                    </div>
+                    <h3 class="font-display text-3xl font-bold text-slate-900 mt-1">
+                        The Two-Surface Economy
+                    </h3>
+                </div>
+
+                <!-- Two-Surface Economy Illustration -->
+                <div class="bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-800 rounded-2xl p-8 mb-8 min-h-[300px] hover-lift overflow-hidden relative">
+                    <svg class="w-full h-full" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Split view with divider -->
+                        <line x1="400" y1="0" x2="400" y2="300" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-dasharray="10,5"/>
+
+                        <!-- Left Side: Human Surface -->
+                        <g>
+                            <text x="200" y="40" font-size="18" fill="rgba(255,255,255,0.95)" text-anchor="middle" font-weight="700">Human Surface</text>
+
+                            <!-- Browser window mockup -->
+                            <rect x="50" y="70" width="300" height="200" rx="8" fill="rgba(255,255,255,0.95)" stroke="rgba(167,139,250,0.6)" stroke-width="2"/>
+                            <!-- Browser chrome -->
+                            <rect x="50" y="70" width="300" height="25" rx="8" fill="rgba(147,51,234,0.3)"/>
+                            <circle cx="65" cy="82.5" r="4" fill="rgba(255,255,255,0.7)"/>
+                            <circle cx="80" cy="82.5" r="4" fill="rgba(255,255,255,0.7)"/>
+                            <circle cx="95" cy="82.5" r="4" fill="rgba(255,255,255,0.7)"/>
+
+                            <!-- Content representation -->
+                            <rect x="70" y="110" width="120" height="15" rx="3" fill="rgba(147,51,234,0.4)"/>
+                            <rect x="70" y="135" width="260" height="6" rx="2" fill="rgba(147,51,234,0.2)"/>
+                            <rect x="70" y="147" width="240" height="6" rx="2" fill="rgba(147,51,234,0.2)"/>
+                            <rect x="70" y="159" width="260" height="6" rx="2" fill="rgba(147,51,234,0.2)"/>
+
+                            <!-- Image placeholder -->
+                            <rect x="70" y="180" width="80" height="60" rx="4" fill="rgba(147,51,234,0.3)"/>
+                            <circle cx="110" cy="200" r="8" fill="rgba(255,255,255,0.6)"/>
+                            <path d="M 85 225 L 95 215 L 105 220 L 120 205 L 135 220" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none"/>
+
+                            <!-- CTA Button -->
+                            <rect x="165" y="200" width="150" height="30" rx="15" fill="rgba(147,51,234,0.8)"/>
+                            <text x="240" y="220" font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="600">Call to Action</text>
+                        </g>
+
+                        <!-- Right Side: Machine Surface -->
+                        <g>
+                            <text x="600" y="40" font-size="18" fill="rgba(255,255,255,0.95)" text-anchor="middle" font-weight="700">Machine Surface</text>
+
+                            <!-- Code/Schema representation -->
+                            <rect x="450" y="70" width="300" height="200" rx="8" fill="rgba(15,23,42,0.95)" stroke="rgba(167,139,250,0.6)" stroke-width="2"/>
+
+                            <!-- JSON/Schema code -->
+                            <text x="465" y="95" font-size="11" fill="#22C55E" font-family="monospace">{</text>
+                            <text x="480" y="110" font-size="10" fill="#A78BFA" font-family="monospace">"product":</text>
+                            <text x="540" y="110" font-size="10" fill="#F59E0B" font-family="monospace">"Enterprise AI"</text>
+
+                            <text x="480" y="125" font-size="10" fill="#A78BFA" font-family="monospace">"price":</text>
+                            <text x="530" y="125" font-size="10" fill="#60A5FA" font-family="monospace">2499.99</text>
+
+                            <text x="480" y="140" font-size="10" fill="#A78BFA" font-family="monospace">"available":</text>
+                            <text x="555" y="140" font-size="10" fill="#60A5FA" font-family="monospace">true</text>
+
+                            <text x="480" y="155" font-size="10" fill="#A78BFA" font-family="monospace">"features":</text>
+                            <text x="545" y="155" font-size="10" fill="#F59E0B" font-family="monospace">[...]</text>
+
+                            <text x="480" y="170" font-size="10" fill="#A78BFA" font-family="monospace">"@context":</text>
+                            <text x="550" y="170" font-size="10" fill="#F59E0B" font-family="monospace">"schema.org"</text>
+
+                            <text x="480" y="185" font-size="10" fill="#A78BFA" font-family="monospace">"@type":</text>
+                            <text x="530" y="185" font-size="10" fill="#F59E0B" font-family="monospace">"Product"</text>
+
+                            <text x="465" y="200" font-size="11" fill="#22C55E" font-family="monospace">}</text>
+
+                            <!-- API endpoint indicator -->
+                            <rect x="465" y="215" width="260" height="20" rx="4" fill="rgba(34,197,94,0.2)" stroke="rgba(34,197,94,0.5)" stroke-width="1"/>
+                            <text x="595" y="229" font-size="9" fill="rgba(34,197,94,0.9)" text-anchor="middle" font-family="monospace">GET /api/products/enterprise-ai</text>
+
+                            <!-- Bot icon -->
+                            <circle cx="720" y="250" r="15" fill="rgba(167,139,250,0.3)" stroke="rgba(167,139,250,0.8)" stroke-width="2"/>
+                            <rect x="712" y="242" width="16" height="16" rx="2" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="1.5"/>
+                            <circle cx="716" cy="248" r="1.5" fill="rgba(255,255,255,0.9)"/>
+                            <circle cx="724" cy="248" r="1.5" fill="rgba(255,255,255,0.9)"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="bg-amber-50 border-l-4 border-amber-500 p-8 rounded-r-2xl hover-lift mb-6">
+                    <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <i class="fas fa-exclamation-triangle text-amber-500"></i>
+                        The Zero-Click Problem
+                    </h4>
+                    <p class="text-lg text-slate-700 leading-relaxed">
+                        Digiday reported that news sites are seeing 25-60% traffic declines from Google AI Overviews. When an LLM can synthesize an answer from multiple sources without requiring the user to visit those sources, traditional traffic-based business models collapse.
+                    </p>
+                </div>
+
+                <p class="text-lg text-slate-700 leading-relaxed">
+                    If your content strategy assumes human visitors who spend time on your site, consume ads, and enter conversion funnels, you're optimizing for a declining use case. Increasingly, agents will discover your products, evaluate your offerings, and even complete transactions without a human ever seeing your website. You need a content and commerce infrastructure that serves both audiences—humans and agents—or you'll be invisible to half the market within two years.
+                </p>
+            </div>
+        </section>
+
+        <div class="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent my-16"></div>
+
+        <!-- Adoption Gap Section -->
+        <section class="mb-20 animate-on-scroll">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-slate-900 mb-12">
+                The Adoption Gap: Why Smart Money Is Moving Fast
+            </h2>
+
+            <!-- Market Size Visualization -->
+            <div class="bg-gradient-to-br from-purple-700 to-purple-950 text-white p-10 rounded-3xl shadow-2xl mb-12 hover-lift animate-on-scroll">
+                <div class="text-center mb-8">
+                    <h3 class="text-3xl font-bold mb-4">AI Agent Market Growth</h3>
+                    <div class="flex items-center justify-center gap-8">
+                        <div>
+                            <div class="text-2xl opacity-75">2023</div>
+                            <div class="text-4xl font-black stat-number">$3.7B</div>
+                        </div>
+                        <div class="text-4xl opacity-50">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div>
+                            <div class="text-2xl opacity-75">2025</div>
+                            <div class="text-5xl font-black stat-number">$7.38B</div>
+                        </div>
+                        <div class="text-4xl opacity-50">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div>
+                            <div class="text-2xl opacity-75">2032</div>
+                            <div class="text-6xl font-black stat-number">$103.6B</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-xl opacity-90">
+                        45.3% Compound Annual Growth Rate
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leaders vs Laggards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 animate-on-scroll">
+                <div class="bg-gradient-to-br from-purple-600 to-purple-800 text-white p-8 rounded-2xl shadow-xl hover-lift">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-trophy text-4xl"></i>
+                        <h3 class="text-2xl font-bold">Leaders</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1 flex-shrink-0"></i>
+                            <span>Average ROI of <strong>171%</strong> on agentic AI investments</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1 flex-shrink-0"></i>
+                            <span><strong>56%</strong> reduction in inbound call volume</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1 flex-shrink-0"></i>
+                            <span><strong>37%</strong> more time saved vs non-adopters</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-800 to-purple-950 text-white p-8 rounded-2xl shadow-xl hover-lift">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-exclamation-triangle text-4xl"></i>
+                        <h3 class="text-2xl font-bold">Laggards</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-times-circle mt-1 flex-shrink-0"></i>
+                            <span><strong>40%+</strong> of projects will be canceled by 2027</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-times-circle mt-1 flex-shrink-0"></i>
+                            <span><strong>26%</strong> of budget wasted on ineffective channels</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-times-circle mt-1 flex-shrink-0"></i>
+                            <span>Only <strong>23%</strong> provide AI training programs</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-8 rounded-r-2xl hover-lift">
+                <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <i class="fas fa-clock text-amber-500"></i>
+                    The Two-Year Window
+                </h4>
+                <p class="text-lg text-slate-700 leading-relaxed">
+                    According to Deloitte, <strong>25%</strong> of enterprises using generative AI will launch agentic AI pilots in 2025, growing to <strong>50%</strong> by 2027. That's a two-year window before adoption becomes table stakes rather than competitive advantage.
+                </p>
+            </div>
+        </section>
+
+        <div class="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent my-16"></div>
+
+        <!-- Strategic Playbook Section -->
+        <section class="mb-20 animate-on-scroll">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-slate-900 mb-12">
+                The Strategic Playbook: Six Moves That Matter
+            </h2>
+
+            <!-- Strategy Cards -->
+            <div class="space-y-8">
+                <!-- Strategy 1 -->
+                <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 hover-lift animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-700 to-purple-900 rounded-lg flex items-center justify-center text-white font-bold">
+                            1
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-slate-900">
+                            Define Agent Roles Before Deploying Agent Tools
+                        </h3>
+                    </div>
+                    <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                        The most common failure pattern in agentic AI adoption is treating agents like features rather than team members. You wouldn't hire a human employee without defining their role, decision rights, data access, escalation paths, and success metrics. The same discipline applies to agents.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <div class="font-semibold text-purple-900 mb-2 flex items-center gap-2">
+                                <i class="fas fa-user-tag"></i>
+                                Role Definition
+                            </div>
+                            <p class="text-sm text-slate-600">What decisions can this agent make autonomously vs requiring approval?</p>
+                        </div>
+                        <div class="bg-purple-100 p-4 rounded-lg">
+                            <div class="font-semibold text-purple-900 mb-2 flex items-center gap-2">
+                                <i class="fas fa-database"></i>
+                                Data Access
+                            </div>
+                            <p class="text-sm text-slate-600">What systems, datasets, and APIs does this agent need?</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <div class="font-semibold text-purple-900 mb-2 flex items-center gap-2">
+                                <i class="fas fa-shield-alt"></i>
+                                Brand Guardrails
+                            </div>
+                            <p class="text-sm text-slate-600">What constraints ensure brand consistency and legal compliance?</p>
+                        </div>
+                        <div class="bg-purple-100 p-4 rounded-lg">
+                            <div class="font-semibold text-purple-900 mb-2 flex items-center gap-2">
+                                <i class="fas fa-exclamation-circle"></i>
+                                Escalation Thresholds
+                            </div>
+                            <p class="text-sm text-slate-600">What conditions trigger automatic escalation to human review?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 2 -->
+                <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 hover-lift animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-700 to-purple-900 rounded-lg flex items-center justify-center text-white font-bold">
+                            2
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-slate-900">
+                            Build the Two-Surface Content System Now
+                        </h3>
+                    </div>
+                    <p class="text-lg text-slate-700 leading-relaxed mb-4">
+                        Most marketing content today is optimized exclusively for human consumption. That's a rapidly depreciating asset. You need parallel infrastructure optimized for machine consumption—what's increasingly called <strong>GEO (Generative Engine Optimization)</strong> versus SEO.
+                    </p>
+                </div>
+
+                <!-- Strategy 3 -->
+                <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 hover-lift animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-700 to-purple-900 rounded-lg flex items-center justify-center text-white font-bold">
+                            3
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-slate-900">
+                            Stand Up Agentic Workspaces with Human-in-the-Loop
+                        </h3>
+                    </div>
+                    <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                        The Bloomberg terminal analogy holds here. Don't try to build one monolithic AI platform. Instead, identify 3-5 high-impact workflows and wire them with specialized agents that coordinate through a common orchestration layer.
+                    </p>
+                    <div class="bg-gradient-to-r from-purple-50 to-purple-100 p-6 rounded-xl">
+                        <h4 class="font-bold text-slate-900 mb-4">Pilot Examples:</h4>
+                        <ul class="space-y-3 text-slate-700">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-chart-line text-purple-700 mt-1"></i>
+                                <span><strong>Campaign planning workspace:</strong> Agent synthesizes market signals and generates strategic recommendations</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-palette text-purple-800 mt-1"></i>
+                                <span><strong>Creative operations workspace:</strong> Agents generate localized variations and enforce brand guidelines</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-tachometer-alt text-purple-900 mt-1"></i>
+                                <span><strong>Performance management workspace:</strong> Agents monitor campaigns and recommend budget reallocations</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Strategy 4 -->
+                <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 hover-lift animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-700 to-purple-900 rounded-lg flex items-center justify-center text-white font-bold">
+                            4
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-slate-900">
+                            Wire Measurement to Cross-Media Standards
+                        </h3>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-700 to-purple-900 text-white p-6 rounded-xl mb-4">
+                        <h4 class="font-bold mb-3 flex items-center gap-2">
+                            <i class="fas fa-poll"></i>
+                            The Industry Is Voting
+                        </h4>
+                        <p class="opacity-95">
+                            eMarketer's 2025 measurement survey: <strong>61.4%</strong> of marketers plan to augment strategies with better MMM. Meanwhile, <strong>30.1%</strong> trust MMM most for determining business drivers, compared to just <strong>11.7%</strong> for third-party multi-touch attribution.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Strategy 5 -->
+                <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 hover-lift animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-700 to-purple-900 rounded-lg flex items-center justify-center text-white font-bold">
+                            5
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-slate-900">
+                            Establish Agent Governance Before You Need It
+                        </h3>
+                    </div>
+                    <p class="text-lg text-slate-700 leading-relaxed mb-6">
+                        Only 37% of organizations have established AI policies defining what agents can and cannot do. That's a ticking time bomb. Agents will make mistakes. Without clear governance, one high-profile failure can derail your entire agentic strategy.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-purple-50 p-4 rounded-lg text-center">
+                            <i class="fas fa-gavel text-3xl text-purple-700 mb-2"></i>
+                            <h5 class="font-bold text-slate-900 mb-1">Agent Ethics Policy</h5>
+                            <p class="text-xs text-slate-600">Define allowed actions and appeal processes</p>
+                        </div>
+                        <div class="bg-purple-100 p-4 rounded-lg text-center">
+                            <i class="fas fa-sitemap text-3xl text-purple-800 mb-2"></i>
+                            <h5 class="font-bold text-slate-900 mb-1">Decision Authority Matrix</h5>
+                            <p class="text-xs text-slate-600">Map autonomous vs approval-required decisions</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg text-center">
+                            <i class="fas fa-clipboard-check text-3xl text-purple-900 mb-2"></i>
+                            <h5 class="font-bold text-slate-900 mb-1">Audit Framework</h5>
+                            <p class="text-xs text-slate-600">Log every consequential agent decision</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 6 -->
+                <div class="bg-white border-2 border-slate-200 rounded-2xl p-8 hover-lift animate-on-scroll">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-700 to-purple-900 rounded-lg flex items-center justify-center text-white font-bold">
+                            6
+                        </div>
+                        <h3 class="font-display text-2xl font-bold text-slate-900">
+                            Mandate Clean-Room Collaboration
+                        </h3>
+                    </div>
+                    <p class="text-lg text-slate-700 leading-relaxed">
+                        The data joining that makes agentic marketing powerful—binding ad exposure to commerce outcomes, unifying identity across channels—can't happen through direct data sharing anymore. Privacy regulations and consumer expectations have closed that door. Clean rooms provide the answer.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent my-16"></div>
+
+        <!-- Timeline Section -->
+        <section class="mb-20 animate-on-scroll">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-slate-900 mb-12 text-center">
+                The Timeline: What Changes When
+            </h2>
+
+            <div class="relative timeline-line py-8">
+                <!-- 2025 -->
+                <div class="mb-16 md:flex md:gap-8 md:items-center">
+                    <div class="md:w-1/2 md:text-right md:pr-8 mb-4 md:mb-0">
+                        <div class="bg-gradient-to-br from-purple-600 to-purple-800 text-white p-6 rounded-2xl shadow-xl hover-lift inline-block">
+                            <h3 class="text-3xl font-black mb-2">2025</h3>
+                            <p class="text-lg font-semibold opacity-90">Experimentation Becomes Implementation</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block relative z-10">
+                        <div class="w-6 h-6 bg-white border-4 border-purple-700 rounded-full"></div>
+                    </div>
+                    <div class="md:w-1/2 md:pl-8">
+                        <ul class="space-y-2 text-slate-700">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check text-purple-700 mt-1"></i>
+                                <span>25% of enterprises launch agentic AI pilots</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check text-purple-700 mt-1"></i>
+                                <span>AI agent market hits $7.38 billion</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check text-purple-700 mt-1"></i>
+                                <span>60% of marketing departments integrate AI</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2026 -->
+                <div class="mb-16 md:flex md:gap-8 md:items-center md:flex-row-reverse">
+                    <div class="md:w-1/2 md:text-left md:pl-8 mb-4 md:mb-0">
+                        <div class="bg-gradient-to-br from-purple-700 to-purple-900 text-white p-6 rounded-2xl shadow-xl hover-lift inline-block">
+                            <h3 class="text-3xl font-black mb-2">2026</h3>
+                            <p class="text-lg font-semibold opacity-90">Mainstream Adoption</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block relative z-10">
+                        <div class="w-6 h-6 bg-white border-4 border-purple-700 rounded-full"></div>
+                    </div>
+                    <div class="md:w-1/2 md:pr-8 md:text-right">
+                        <ul class="space-y-2 text-slate-700">
+                            <li class="flex items-start gap-2 md:flex-row-reverse md:justify-end">
+                                <i class="fas fa-check text-purple-700 mt-1"></i>
+                                <span>80% faster growth with composable AI architectures</span>
+                            </li>
+                            <li class="flex items-start gap-2 md:flex-row-reverse md:justify-end">
+                                <i class="fas fa-check text-purple-700 mt-1"></i>
+                                <span>33% of enterprise software embeds agentic AI</span>
+                            </li>
+                            <li class="flex items-start gap-2 md:flex-row-reverse md:justify-end">
+                                <i class="fas fa-check text-purple-700 mt-1"></i>
+                                <span>Global AI spending reaches $300 billion</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2027 -->
+                <div class="mb-16 md:flex md:gap-8 md:items-center">
+                    <div class="md:w-1/2 md:text-right md:pr-8 mb-4 md:mb-0">
+                        <div class="bg-gradient-to-br from-purple-800 to-purple-950 text-white p-6 rounded-2xl shadow-xl hover-lift inline-block">
+                            <h3 class="text-3xl font-black mb-2">2027</h3>
+                            <p class="text-lg font-semibold opacity-90">The Laggard Penalty</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block relative z-10">
+                        <div class="w-6 h-6 bg-white border-4 border-purple-800 rounded-full"></div>
+                    </div>
+                    <div class="md:w-1/2 md:pl-8">
+                        <ul class="space-y-2 text-slate-700">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-exclamation-triangle text-purple-800 mt-1"></i>
+                                <span>50% of enterprises launch agentic AI deployments</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-exclamation-triangle text-purple-800 mt-1"></i>
+                                <span>40% of projects canceled without clear value</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-exclamation-triangle text-purple-800 mt-1"></i>
+                                <span>Performance gap becomes nearly impossible to close</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2028-2030 -->
+                <div class="md:flex md:gap-8 md:items-center md:flex-row-reverse">
+                    <div class="md:w-1/2 md:text-left md:pl-8 mb-4 md:mb-0">
+                        <div class="bg-gradient-to-br from-purple-600 to-purple-800 text-white p-6 rounded-2xl shadow-xl hover-lift inline-block">
+                            <h3 class="text-3xl font-black mb-2">2028-2030</h3>
+                            <p class="text-lg font-semibold opacity-90">The New Normal</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block relative z-10">
+                        <div class="w-6 h-6 bg-white border-4 border-purple-700 rounded-full"></div>
+                    </div>
+                    <div class="md:w-1/2 md:pr-8 md:text-right">
+                        <ul class="space-y-2 text-slate-700">
+                            <li class="flex items-start gap-2 md:flex-row-reverse md:justify-end">
+                                <i class="fas fa-star text-purple-700 mt-1"></i>
+                                <span>80% of customer service resolved by agents</span>
+                            </li>
+                            <li class="flex items-start gap-2 md:flex-row-reverse md:justify-end">
+                                <i class="fas fa-star text-purple-700 mt-1"></i>
+                                <span>$2.6-4.4 trillion annual GDP impact</span>
+                            </li>
+                            <li class="flex items-start gap-2 md:flex-row-reverse md:justify-end">
+                                <i class="fas fa-star text-purple-700 mt-1"></i>
+                                <span>AI agent market reaches $103.6 billion</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent my-16"></div>
+
+        <!-- Bottom Line Section -->
+        <section class="mb-20 animate-on-scroll">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-slate-900 mb-12">
+                The Bottom Line
+            </h2>
+
+            <p class="text-xl text-slate-700 leading-relaxed mb-8">
+                AI agents aren't replacing marketing teams. They're replacing the operating assumption that marketing decisions require human initiation. The workflow changes from "human thinks, human decides, human executes" to <strong>"agent prepares, human approves, agent executes."</strong>
+            </p>
+
+            <!-- Three Characteristics -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 animate-on-scroll">
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-purple-700 p-6 rounded-r-2xl hover-lift">
+                    <div class="text-3xl mb-3">
+                        <i class="fas fa-gavel text-purple-700"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Clear Governance</h4>
+                    <p class="text-sm text-slate-700">Define what agents can and cannot do before deploying them, with transparent audit trails and escalation paths.</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-purple-700 p-6 rounded-r-2xl hover-lift">
+                    <div class="text-3xl mb-3">
+                        <i class="fas fa-layer-group text-purple-700"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Two-Surface Strategy</h4>
+                    <p class="text-sm text-slate-700">Optimize for both human and machine consumption, recognizing that agents are becoming primary channels.</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 border-l-4 border-purple-700 p-6 rounded-r-2xl hover-lift">
+                    <div class="text-3xl mb-3">
+                        <i class="fas fa-chart-line text-purple-700"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">Measurement Infrastructure</h4>
+                    <p class="text-sm text-slate-700">Wire operations to unified standards, clean-room collaboration, and decision-focused analytics.</p>
+                </div>
+            </div>
+
+            <div class="relative my-12 p-10 bg-gradient-to-br from-purple-800 to-purple-950 rounded-3xl shadow-2xl hover-lift">
+                <div class="absolute top-4 left-4 text-6xl text-white opacity-10">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="font-display text-3xl font-bold text-white leading-relaxed relative z-10 italic text-center">
+                    "The train is leaving the station. The only question is whether you're on it—and whether you're steering or just along for the ride."
+                </p>
+            </div>
+        </section>
+
+        <!-- 90-Day Sprint Section -->
+        <section class="mb-20 animate-on-scroll">
+            <div class="bg-gradient-to-br from-purple-700 to-purple-950 text-white p-10 md:p-12 rounded-3xl shadow-2xl">
+                <h2 class="font-display text-4xl font-bold mb-8 flex items-center gap-3">
+                    <i class="fas fa-rocket"></i>
+                    The 90-Day Sprint
+                </h2>
+
+                <p class="text-xl opacity-95 mb-10 leading-relaxed">
+                    This isn't a five-year transformation plan. It's a 90-day sprint to establish whether agentic marketing can deliver measurable value in your organization.
+                </p>
+
+                <!-- Days 1-30 -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-6">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span class="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-lg">1</span>
+                        Days 1-30: Foundation
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Audit current AI use across marketing organization</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Select 2-3 high-impact workflows for agentic pilots</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Draft agent ethics policy and decision authority matrix</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Establish measurement baseline for pilot workflows</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Days 31-60 -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-6">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span class="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-lg">2</span>
+                        Days 31-60: Pilot
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Deploy first agentic workflow with human-in-the-loop approval</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Implement audit logging for all agent decisions</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Begin two-surface content strategy for key product categories</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Wire tagging for emerging cross-media measurement standards</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Days 61-90 -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span class="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-lg">3</span>
+                        Days 61-90: Scale Readiness
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Analyze pilot results—what worked, what failed, what surprised you</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Expand agent autonomy for proven workflows</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Establish clean-room partnerships with 2-3 key data collaborators</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle mt-1"></i>
+                            <span>Present board-ready business case for broader agentic deployment</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent my-16"></div>
+
+        <!-- Footer -->
+        <footer class="py-12 border-t-2 border-slate-200">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">About This Research</h3>
+                <p class="text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                    This white paper was researched, compiled, and written by <strong>David Wilson</strong> and <strong>Deven Spear</strong> and synthesizes insights from Zeta Live 2025, supplemented with independent research from Gartner, PwC, Deloitte, McKinsey, Forrester, HubSpot, and other leading industry analysts. All statistics cited are from reports published between January 2024 and October 2025.
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-slate-50 to-slate-100 p-8 rounded-2xl text-center mb-8">
+                <p class="font-display text-2xl font-semibold text-slate-800 leading-relaxed">
+                    The marketing landscape is being rewritten.<br>
+                    The question isn't whether to participate in that rewriting.<br>
+                    <span class="gradient-text">It's whether you'll be author or footnote.</span>
+                </p>
+            </div>
+
+            <p class="text-center text-sm text-slate-500">
+                © 2025. This document is intended for executive strategy discussions and may be shared with attribution.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Offline/Resource Loading Error Notice -->
+    <div id="offline-notice" style="display: none; position: fixed; top: 0; left: 0; right: 0; background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); color: white; padding: 16px; text-align: center; z-index: 9999; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <strong style="font-size: 18px;">⚠️ Internet Connection Required</strong>
+            <p style="margin: 8px 0 0 0; font-size: 14px;">This document requires an internet connection to load fonts, styles, and icons. Please check your connection and refresh the page.</p>
+        </div>
+    </div>
+
+    <script>
+        // Check if external resources loaded properly
+        function checkResourcesLoaded() {
+            let hasErrors = false;
+
+            // Check if Tailwind CSS loaded
+            const testElement = document.createElement('div');
+            testElement.className = 'hidden';
+            document.body.appendChild(testElement);
+            const isHidden = window.getComputedStyle(testElement).display === 'none';
+            document.body.removeChild(testElement);
+
+            if (!isHidden) {
+                console.error('Tailwind CSS failed to load');
+                hasErrors = true;
+            }
+
+            // Check if Font Awesome loaded
+            const testIcon = document.createElement('i');
+            testIcon.className = 'fas fa-check';
+            testIcon.style.position = 'absolute';
+            testIcon.style.left = '-9999px';
+            document.body.appendChild(testIcon);
+            const iconStyles = window.getComputedStyle(testIcon, ':before');
+            const faLoaded = iconStyles.fontFamily.includes('Font Awesome');
+            document.body.removeChild(testIcon);
+
+            if (!faLoaded) {
+                console.error('Font Awesome failed to load');
+                hasErrors = true;
+            }
+
+            // Show error notice if resources failed to load
+            if (hasErrors) {
+                const notice = document.getElementById('offline-notice');
+                if (notice) {
+                    notice.style.display = 'block';
+                }
+            }
+        }
+
+        // Check resources after page loads
+        window.addEventListener('load', function() {
+            setTimeout(checkResourcesLoaded, 1000);
+        });
+
+        // Also check if we're offline
+        window.addEventListener('offline', function() {
+            const notice = document.getElementById('offline-notice');
+            if (notice) {
+                notice.style.display = 'block';
+            }
+        });
+
+        window.addEventListener('online', function() {
+            const notice = document.getElementById('offline-notice');
+            if (notice) {
+                notice.style.display = 'none';
+            }
+            // Reload to get resources
+            location.reload();
+        });
+
+        // Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
